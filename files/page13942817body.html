@@ -1,0 +1,943 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="289030" data-tilda-page-id="13942817" data-tilda-page-alias="2019" data-tilda-formskey="b747bf21bed5b885b2de7e95ceb974d4" data-tilda-lazy="yes"><div id="rec230711096" class="r t-rec" style=" " data-animationappear="off" data-record-type="461" ><!-- T461 --><div id="nav230711096marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('230711096');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec230711096 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav230711096" class="t461 t461__positionstatic tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav230711096marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="center" data-menu="yes"><div class="t461__maincontainer "><div class="t461__topwrapper" style="height:160px;"><div class="t461__logowrapper"><div class="t461__logowrapper2"><div style="display: block;"><a href="/konkurs" style="color:#ffffff;"><img class="t461__imglogo t461__imglogomobile" 
+src="images/tild3366-3132-4663-a561-643965303865__dgtkaj-tjle.jpg" 
+imgfield="img" 
+style="max-width: 250px; width: 250px;"
+alt="Организатор"
+></a></div></div></div><nav class="t461__listwrapper t461__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t461__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#rec230711311"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Победители</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230711458"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Как это было</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230711612"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Фотогалерея</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230858108"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">СМИ о конкурсе</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="/konkurs"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Вернуться на главную</a></li></ul></nav><div class="t461__alladditional"><div class="t461__leftwrapper" style=" padding-right:175px;"><div class="t461__additionalwrapper"><div class="t461__additional_share_buttons t461__additionalitem"><script t461__type="text/javascript" src="https://static.tildacdn.com/js/ya-share.js" charset="utf-8"></script><div class="ya-share2" data-access-token:facebook="" data-yashareL10n="en" data-services="facebook,vkontakte,odnoklassniki,twitter" data-counter=""></div></div></div></div><div class="t461__rightwrapper" style=" padding-left:175px;"><div class="t461__additionalwrapper"><div class="t461__additional_descr t461__additionalitem" style="font-size:20px;font-family:'Roboto';">+7 951 613 36 31</div><div class="t461__additional_buttons t461__additionalitem"><div class="t461__additional_buttons_wrap"><div class="t461__additional_buttons_but"><a href="https://konkurs.sprgsu.ru/index.php/ru/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-2020/%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D0%B8-2020" target="" class="t-btn t-btn_md " style="color:#ffffff;background-color:#599cff;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;font-family:Roboto;box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);"><table role="presentation" style="width:100%; height:100%;"><tr><td>Подать заявку</td></tr></table></a></div></div></div></div></div></div></div><div class="t461__middlelinewrapper"><div class="t461__linewrapper"><hr class="t461__horizontalline" style=" background-color:#000000; opacity:0.1;"></div></div><div class="t461__bottomwrapper t461__menualign_center" style=" height:70px;"><nav class="t461__listwrapper t461__desktoplist"
+aria-label="Основные разделы на странице"><ul class="t461__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#rec230711311" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Победители</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230711458" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Как это было</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230711612" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Фотогалерея</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec230858108" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">СМИ о конкурсе</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="/konkurs" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#434242;font-size:20px;font-weight:600;font-family:'Roboto';text-transform:uppercase;letter-spacing:0.5px;">Вернуться на главную</a></li></ul></nav></div></div></div><style>@media screen and (max-width: 980px) {
+#rec230711096 .t461__leftcontainer{
+padding: 20px;
+}
+}
+@media screen and (max-width: 980px) {
+#rec230711096 .t461__imglogo{
+padding: 20px 0;
+}
+}</style><script>t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t461__desktoplist .t461__list_item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('230711096', '.t461');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('230711096', '.t461');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec230711096');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t461');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('230711096', '.t461');
+});
+});</script><style>@media (hover), (min-width:0\0) {
+#rec230711096 .t-btn:not(.t-animate_no-hover):hover{
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.003) !important; }
+#rec230711096 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec230711096 .t-btntext:not(.t-animate_no-hover):hover{
+}
+}</style><style>#rec230711096 .t-menu__link-item{
+outline: none;
+}
+#rec230711096 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec230711096 .t-menu__link-item,
+#rec230711096 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec230711096 .t461 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec231492810" class="r t-rec t-rec_pt_15 t-rec_pb_15 t-screenmax-640px" style="padding-top:15px;padding-bottom:15px; " data-record-type="191" data-screen-max="640px" ><!-- T142 --><div class="t142"><div class="t-container_100"><div class="t142__wrapone"><div class="t142__wraptwo"><a href="http://ciss42.ru/konkurs" target="" class=""><div class="t-btn t142__submit t142__submit_size_sm" style="color:#599cff;border:3px solid #599cff;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" ><span class="t142__text">Вернуться назад</span></div></a></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('231492810');});
+});
+window.addEventListener('load', function(){
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('231492810');});
+});</script></div><div id="rec230711311" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t015__title t-title t-title_lg" field="title" style=""><div style="font-size:42px;font-family:'Roboto';color:#599cff;" data-customstyle="yes">Победители 2019<br /></div></div> </div></div></div></div><div id="rec230711394" class="r t-rec t-rec_pt_30 t-rec_pb_150" style="padding-top:30px;padding-bottom:150px; " data-record-type="508" ><!-- t508 --><div class="t508"><ul class="t508__container t-container"><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1476889049104">Лучший проект социального предпринимательства в сфере дополнительного образования и воспитания детей: <strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1476889049104">Центр развития «SOVA», г.Березовский , ИП Ликаонская Кира Васильевна</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1476889075209">Лучший проект социального предпринимательства в сфере здорового образа жизни, физической культуры и спорта<strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1476889075209">Спортивный клуб «ЛУКИСТРЕЛЫ», г.Кемерово, руководитель Брюзгина Наталья Юрьевна , ООО «Продвижение»</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1476889079427">Лучший проект социального предпринимательства в сфере поддержки людей с ограниченными возможностями здоровья <strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1476889079427">Детский учебно-коррекционный развивающий центр «CLEVER KIDS», г.Новокузнецк, ИП Первушин Алексей Владимирович</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1476889085397">Лучший проект социального предпринимательства в сфере экологии<strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1476889085397">Сбор и переработка пластиковых отходов «КУЗБАССПЛАСТ», г.Юрга , ИП Сидельцев Максим Владимирович</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1600349430715">Лучший проект социального предпринимательства в сфере разработки технических средств реабилитации<strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1600349430715">Иммунитет – здоровье сберегающие технологии, г.Кемерово, ООО «НПК «Глобал Групп», руководитель Идоленко Роман Викторович</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1600349440253">Лучший проект социального предпринимательства в культурно-просветительской сфере<strong></strong></div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1600349440253">Центр современной хореографии и фитнеса «Без границ», Белово</div></div></li><div class="t-clear t508__separator" style=""></div><li class="t-col t-col_8 t-prefix_2 t-item"><div class="t-cell t-valign_top"><svg role="presentation" class="t508__checkmark" style="width:55px; height:55px;" fill="#599cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 31.8"><path d="M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z" /></svg></div><div class="t508__textwrapper t-cell t-valign_top" style=""><div class="t-name t-name_md t508__bottommargin" style="font-family:'Roboto';" field="li_title__1600349488719"> <strong>Лучший социальный бизнес в сфере профессиональной ориентации, обеспечения занятости, вовлечения в социально активную деятельность лиц, нуждающихся в социальном сопровождении</strong> </div><div class="t-descr t-descr_sm" style="font-family:'Roboto';" field="li_descr__1600349488719">Проект «Детки!», г.Кемерово, ИП Казарина Екатерина Викторовна</div></div></li></ul></div></div><div id="rec230711458" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t015__title t-title t-title_lg" field="title" style=""><div style="font-size:42px;font-family:'Roboto';color:#599cff;" data-customstyle="yes">Как это было<br /></div></div> </div></div></div></div><div id="rec230711552" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-animationappear="off" data-record-type="924" ><!-- t924 --><!-- @classes t-descr t-descr_xxs t-descr_sm t-title t-title_xxs t-text t-text_md t-heading t-heading_lg t-name t-uptitle t-uptitle_sm t-uptitle_xs t-btn_md --><div class="t924"><!-- grid container start --><div class="js-feed t-feed t-feed_row-bigimg" data-feed-grid-type="row-bigimg" data-feed-recid="230711552"><div class="t-feed__container t-container" ><div class="js-feed-parts-select-container t-col t-col_8 t-prefix_2"></div></div><!-- preloader els --><div class="js-feed-preloader t-feed__post-preloader_row-bigimg t-feed__post-preloader__container_hidden t-container"><div class="t-feed__post-preloader t-col t-col_8 t-prefix_2"><div class="t-feed__post-preloader__wrapper"><div class="t-feed__post-preloader__titlewrapper"><div class="t-feed__post-preloader__title"></div></div><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__textwrapper"><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div></div></div><div class="t-feed__post-preloader t-col t-col_8 t-prefix_2"><div class="t-feed__post-preloader__wrapper"><div class="t-feed__post-preloader__titlewrapper"><div class="t-feed__post-preloader__title"></div></div><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__textwrapper"><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div></div></div><div class="t-feed__post-preloader t-col t-col_8 t-prefix_2"><div class="t-feed__post-preloader__wrapper"><div class="t-feed__post-preloader__titlewrapper"><div class="t-feed__post-preloader__title"></div></div><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__textwrapper"><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div></div></div></div><!-- preloader els end --><div class="js-feed-container t-feed__container t-container" data-feed-show-slice="1"></div></div><!-- grid container end --></div><style type="text/css">/* Feed part switch buttons styles */
+#rec230711552 .t-feed__parts-switch-btn {
+font-weight:400;
+border:1px solid #000000;
+border-radius: 40px; }
+#rec230711552 .t-feed__parts-switch-btn span,
+#rec230711552 .t-feed__parts-switch-btn a {
+color:#000000;
+padding: 6px 18px 6px;
+}
+#rec230711552 .t-feed__parts-switch-btn.t-active {
+background-color: #000000;
+}
+#rec230711552 .t-feed__parts-switch-btn.t-active span,
+#rec230711552 .t-feed__parts-switch-btn.t-active a {
+color:#ffffff !important; }</style><style type="text/css">#rec230711552 .t-feed__post-popup__cover-wrapper .t-slds__bullet_active .t-slds__bullet_body,
+#rec230711552 .t-feed__post-popup__cover-wrapper .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style><!-- news setup start --><script type="text/javascript">t_onReady(function (){
+var typography_optsObj = {
+title: "",
+descr: "",
+subtitle: ""
+};
+var separator_optsObj = {
+height: '',
+color: '',
+opacity: '',
+hideSeparator: false };
+var popup_optsObj = {
+popupBgColor: '',
+overlayBgColorRgba: '',
+closeText: '',
+iconColor: '',
+popupStat: '',
+titleColor: '',
+textColor: '',
+subtitleColor: '',
+datePos: 'aftertext',
+partsPos: 'aftertext',
+imagePos: 'beforetitle',
+inTwoColumns: false,
+zoom: false,
+styleRelevants: '',
+methodRelevants: 'random',
+titleRelevants: '',
+showRelevants: '',
+shareStyle: '',
+shareBg: '',
+isShare: false,
+shareServices: '',
+shareFBToken: '',
+showDate: true,
+bgSize: 'cover'
+};
+var arrowtop_optsObj = {
+isShow: false,
+style: '',
+color: '',
+bottom: '',
+left: '',
+right: ''
+};
+var parts_optsObj = {
+partsBgColor: '',
+partsBorderSize: '1px',
+partsBorderColor: '#000000',
+align: 'center'
+};
+var gallery_optsObj = {
+control: '',
+arrowSize: '',
+arrowBorderSize: '',
+arrowColor: '',
+arrowColorHover: '',
+arrowBg: '',
+arrowBgHover: '',
+arrowBgOpacity: '',
+arrowBgOpacityHover: '',
+showBorder: '',
+dotsWidth: '',
+dotsBg: '',
+dotsActiveBg: '',
+dotsBorderSize: ''
+};
+var btnAllPosts_optsObj = {
+text: '',
+link: '',
+target: ''
+};
+var colWithBg_optsObj = {
+paddingSize: '',
+background: '',
+borderRadius: '',
+shadowSize: '',
+shadowOpacity: '',
+shadowSizeHover: '',
+shadowOpacityHover: '',
+shadowShiftyHover: ''
+};
+var options = {
+feeduid: '370056895458',
+previewmode: 'yes',
+align: '',
+amountOfPosts: '',
+reverse: 'desc',
+blocksInRow: '',
+blocksClass: '',
+blocksWidth: '',
+colClass: '8',
+prefixClass: '2',
+vindent: '',
+dateFormat: '4',
+timeFormat: '',
+imageRatio: '56',
+hasOriginalAspectRatio: false,
+imageHeight: '',
+imageWidth: '',
+dateFilter: 'all',
+showPartAll: true,
+showImage:true,
+showShortDescr:true,
+showParts:true,
+showDate:true,
+hideFeedParts: false,
+parts_opts: parts_optsObj,
+btnsAlign: false,
+colWithBg: colWithBg_optsObj,
+separator: separator_optsObj,
+btnAllPosts: btnAllPosts_optsObj,
+popup_opts: popup_optsObj,
+arrowtop_opts: arrowtop_optsObj,
+gallery: gallery_optsObj,
+typo: typography_optsObj,
+amountOfSymbols: '',
+bbtnStyle: 'color:#ffffff;background-color:#000000;',
+btnStyle: '',
+btnTextColor: '',
+btnType: '',
+btnSize: '',
+btnText: '',
+btnReadMore: '',
+isHorizOnMob:false,
+itemsAnim: '',
+datePosPs: 'beforetitle',
+partsPosPs: 'beforetitle',
+imagePosPs: 'beforetitle',
+datePos: 'aftertitle',
+partsPos: 'aftertitle',
+imagePos: 'aftertitle' };
+t_onFuncLoad('t_feed_init', function() {
+t_feed_init('230711552', options);
+});
+});</script><!-- news setup end --></div><div id="rec230711612" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t015__title t-title t-title_lg" field="title" style=""><div style="font-size:42px;font-family:'Roboto';color:#599cff;" data-customstyle="yes">Фотогалерея<br /></div></div> </div></div></div></div><div id="rec230711677" class="r t-rec" style=" " data-animationappear="off" data-record-type="603" ><!-- t603--><div class="t603"><div class="t603__container t-container_100"><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3236-3934-4832-a164-656638346438__dsc_0012.jpg" 
+bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="images/tild3236-3934-4832-a164-656638346438__dsc_0012.jpg" 
+style="background: url('images/tild3236-3934-4832-a164-656638346438__-__resizeb__20x__dsc_0012.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3236-3934-4832-a164-656638346438__dsc_0012.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3065-3332-4761-b936-666131653931__dsc_0016.jpg" 
+bgimgfield="gi_img__1" data-zoom-target="1" data-zoomable="yes" data-img-zoom-url="images/tild3065-3332-4761-b936-666131653931__dsc_0016.jpg" 
+style="background: url('images/tild3065-3332-4761-b936-666131653931__-__resizeb__20x__dsc_0016.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3065-3332-4761-b936-666131653931__dsc_0016.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3561-6431-4237-b836-373764383030__dsc_0046.jpg" 
+bgimgfield="gi_img__2" data-zoom-target="2" data-zoomable="yes" data-img-zoom-url="images/tild3561-6431-4237-b836-373764383030__dsc_0046.jpg" 
+style="background: url('images/tild3561-6431-4237-b836-373764383030__-__resizeb__20x__dsc_0046.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3561-6431-4237-b836-373764383030__dsc_0046.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6164-3930-4032-a364-633036373334__dsc_0084.jpg" 
+bgimgfield="gi_img__3" data-zoom-target="3" data-zoomable="yes" data-img-zoom-url="images/tild6164-3930-4032-a364-633036373334__dsc_0084.jpg" 
+style="background: url('images/tild6164-3930-4032-a364-633036373334__-__resizeb__20x__dsc_0084.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6164-3930-4032-a364-633036373334__dsc_0084.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6438-3861-4563-a535-326134666261__dsc_0095.jpg" 
+bgimgfield="gi_img__4" data-zoom-target="4" data-zoomable="yes" data-img-zoom-url="images/tild6438-3861-4563-a535-326134666261__dsc_0095.jpg" 
+style="background: url('images/tild6438-3861-4563-a535-326134666261__-__resizeb__20x__dsc_0095.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6438-3861-4563-a535-326134666261__dsc_0095.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6339-3662-4435-b136-346130393733__dsc_0100.jpg" 
+bgimgfield="gi_img__5" data-zoom-target="5" data-zoomable="yes" data-img-zoom-url="images/tild6339-3662-4435-b136-346130393733__dsc_0100.jpg" 
+style="background: url('images/tild6339-3662-4435-b136-346130393733__-__resizeb__20x__dsc_0100.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6339-3662-4435-b136-346130393733__dsc_0100.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3266-3835-4230-a366-303135303565__dsc_0106.jpg" 
+bgimgfield="gi_img__6" data-zoom-target="6" data-zoomable="yes" data-img-zoom-url="images/tild3266-3835-4230-a366-303135303565__dsc_0106.jpg" 
+style="background: url('images/tild3266-3835-4230-a366-303135303565__-__resizeb__20x__dsc_0106.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3266-3835-4230-a366-303135303565__dsc_0106.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3431-3038-4338-b634-653031633739__dsc_0111.jpg" 
+bgimgfield="gi_img__7" data-zoom-target="7" data-zoomable="yes" data-img-zoom-url="images/tild3431-3038-4338-b634-653031633739__dsc_0111.jpg" 
+style="background: url('images/tild3431-3038-4338-b634-653031633739__-__resizeb__20x__dsc_0111.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3431-3038-4338-b634-653031633739__dsc_0111.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6130-6532-4666-b364-326335636162__dsc_0127.jpg" 
+bgimgfield="gi_img__8" data-zoom-target="8" data-zoomable="yes" data-img-zoom-url="images/tild6130-6532-4666-b364-326335636162__dsc_0127.jpg" 
+style="background: url('images/tild6130-6532-4666-b364-326335636162__-__resizeb__20x__dsc_0127.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6130-6532-4666-b364-326335636162__dsc_0127.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3361-6161-4666-a131-666561363239__dsc_0141.jpg" 
+bgimgfield="gi_img__9" data-zoom-target="9" data-zoomable="yes" data-img-zoom-url="images/tild3361-6161-4666-a131-666561363239__dsc_0141.jpg" 
+style="background: url('images/tild3361-6161-4666-a131-666561363239__-__resizeb__20x__dsc_0141.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3361-6161-4666-a131-666561363239__dsc_0141.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3636-3336-4632-a566-623133643738__dsc_0147.jpg" 
+bgimgfield="gi_img__10" data-zoom-target="10" data-zoomable="yes" data-img-zoom-url="images/tild3636-3336-4632-a566-623133643738__dsc_0147.jpg" 
+style="background: url('images/tild3636-3336-4632-a566-623133643738__-__resizeb__20x__dsc_0147.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3636-3336-4632-a566-623133643738__dsc_0147.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3631-3766-4830-b963-633064396134__dsc_0151.jpg" 
+bgimgfield="gi_img__11" data-zoom-target="11" data-zoomable="yes" data-img-zoom-url="images/tild3631-3766-4830-b963-633064396134__dsc_0151.jpg" 
+style="background: url('images/tild3631-3766-4830-b963-633064396134__-__resizeb__20x__dsc_0151.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3631-3766-4830-b963-633064396134__dsc_0151.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3737-3432-4565-a164-396135393664__dsc_0155.jpg" 
+bgimgfield="gi_img__12" data-zoom-target="12" data-zoomable="yes" data-img-zoom-url="images/tild3737-3432-4565-a164-396135393664__dsc_0155.jpg" 
+style="background: url('images/tild3737-3432-4565-a164-396135393664__-__resizeb__20x__dsc_0155.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3737-3432-4565-a164-396135393664__dsc_0155.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3030-3136-4631-b662-616562326365__dsc_9513.jpg" 
+bgimgfield="gi_img__13" data-zoom-target="13" data-zoomable="yes" data-img-zoom-url="images/tild3030-3136-4631-b662-616562326365__dsc_9513.jpg" 
+style="background: url('images/tild3030-3136-4631-b662-616562326365__-__resizeb__20x__dsc_9513.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3030-3136-4631-b662-616562326365__dsc_9513.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3061-3630-4933-b039-366537393639__dsc_9517.jpg" 
+bgimgfield="gi_img__14" data-zoom-target="14" data-zoomable="yes" data-img-zoom-url="images/tild3061-3630-4933-b039-366537393639__dsc_9517.jpg" 
+style="background: url('images/tild3061-3630-4933-b039-366537393639__-__resizeb__20x__dsc_9517.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3061-3630-4933-b039-366537393639__dsc_9517.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6561-6565-4165-a465-326538623539__dsc_9518.jpg" 
+bgimgfield="gi_img__15" data-zoom-target="15" data-zoomable="yes" data-img-zoom-url="images/tild6561-6565-4165-a465-326538623539__dsc_9518.jpg" 
+style="background: url('images/tild6561-6565-4165-a465-326538623539__-__resizeb__20x__dsc_9518.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6561-6565-4165-a465-326538623539__dsc_9518.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3837-6138-4562-b333-633265306638__dsc_9520.jpg" 
+bgimgfield="gi_img__16" data-zoom-target="16" data-zoomable="yes" data-img-zoom-url="images/tild3837-6138-4562-b333-633265306638__dsc_9520.jpg" 
+style="background: url('images/tild3837-6138-4562-b333-633265306638__-__resizeb__20x__dsc_9520.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3837-6138-4562-b333-633265306638__dsc_9520.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3930-3838-4335-a331-636563653130__dsc_9523.jpg" 
+bgimgfield="gi_img__17" data-zoom-target="17" data-zoomable="yes" data-img-zoom-url="images/tild3930-3838-4335-a331-636563653130__dsc_9523.jpg" 
+style="background: url('images/tild3930-3838-4335-a331-636563653130__-__resizeb__20x__dsc_9523.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3930-3838-4335-a331-636563653130__dsc_9523.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3065-3161-4235-b462-643663626462__dsc_9526.jpg" 
+bgimgfield="gi_img__18" data-zoom-target="18" data-zoomable="yes" data-img-zoom-url="images/tild3065-3161-4235-b462-643663626462__dsc_9526.jpg" 
+style="background: url('images/tild3065-3161-4235-b462-643663626462__-__resizeb__20x__dsc_9526.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3065-3161-4235-b462-643663626462__dsc_9526.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3231-6538-4934-a436-346336333463__dsc_9527.jpg" 
+bgimgfield="gi_img__19" data-zoom-target="19" data-zoomable="yes" data-img-zoom-url="images/tild3231-6538-4934-a436-346336333463__dsc_9527.jpg" 
+style="background: url('images/tild3231-6538-4934-a436-346336333463__-__resizeb__20x__dsc_9527.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3231-6538-4934-a436-346336333463__dsc_9527.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6134-6266-4635-b361-326132643362__dsc_9528.jpg" 
+bgimgfield="gi_img__20" data-zoom-target="20" data-zoomable="yes" data-img-zoom-url="images/tild6134-6266-4635-b361-326132643362__dsc_9528.jpg" 
+style="background: url('images/tild6134-6266-4635-b361-326132643362__-__resizeb__20x__dsc_9528.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6134-6266-4635-b361-326132643362__dsc_9528.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3831-6431-4533-a234-313862306663__dsc_9535.jpg" 
+bgimgfield="gi_img__21" data-zoom-target="21" data-zoomable="yes" data-img-zoom-url="images/tild3831-6431-4533-a234-313862306663__dsc_9535.jpg" 
+style="background: url('images/tild3831-6431-4533-a234-313862306663__-__resizeb__20x__dsc_9535.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3831-6431-4533-a234-313862306663__dsc_9535.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3930-3337-4130-b534-306662356135__dsc_9540.jpg" 
+bgimgfield="gi_img__22" data-zoom-target="22" data-zoomable="yes" data-img-zoom-url="images/tild3930-3337-4130-b534-306662356135__dsc_9540.jpg" 
+style="background: url('images/tild3930-3337-4130-b534-306662356135__-__resizeb__20x__dsc_9540.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3930-3337-4130-b534-306662356135__dsc_9540.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3063-6266-4563-b266-343934383532__dsc_9547.jpg" 
+bgimgfield="gi_img__23" data-zoom-target="23" data-zoomable="yes" data-img-zoom-url="images/tild3063-6266-4563-b266-343934383532__dsc_9547.jpg" 
+style="background: url('images/tild3063-6266-4563-b266-343934383532__-__resizeb__20x__dsc_9547.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3063-6266-4563-b266-343934383532__dsc_9547.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3437-3961-4362-b635-383632633832__dsc_9555.jpg" 
+bgimgfield="gi_img__24" data-zoom-target="24" data-zoomable="yes" data-img-zoom-url="images/tild3437-3961-4362-b635-383632633832__dsc_9555.jpg" 
+style="background: url('images/tild3437-3961-4362-b635-383632633832__-__resizeb__20x__dsc_9555.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3437-3961-4362-b635-383632633832__dsc_9555.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3337-6433-4163-b538-313739303938__dsc_9568.jpg" 
+bgimgfield="gi_img__25" data-zoom-target="25" data-zoomable="yes" data-img-zoom-url="images/tild3337-6433-4163-b538-313739303938__dsc_9568.jpg" 
+style="background: url('images/tild3337-6433-4163-b538-313739303938__-__resizeb__20x__dsc_9568.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3337-6433-4163-b538-313739303938__dsc_9568.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6638-3831-4838-a337-613032613664__dsc_9571.jpg" 
+bgimgfield="gi_img__26" data-zoom-target="26" data-zoomable="yes" data-img-zoom-url="images/tild6638-3831-4838-a337-613032613664__dsc_9571.jpg" 
+style="background: url('images/tild6638-3831-4838-a337-613032613664__-__resizeb__20x__dsc_9571.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6638-3831-4838-a337-613032613664__dsc_9571.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3031-3432-4438-b833-353338353631__dsc_9572.jpg" 
+bgimgfield="gi_img__27" data-zoom-target="27" data-zoomable="yes" data-img-zoom-url="images/tild3031-3432-4438-b833-353338353631__dsc_9572.jpg" 
+style="background: url('images/tild3031-3432-4438-b833-353338353631__-__resizeb__20x__dsc_9572.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3031-3432-4438-b833-353338353631__dsc_9572.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3136-3763-4062-b234-383466386266__dsc_9573.jpg" 
+bgimgfield="gi_img__28" data-zoom-target="28" data-zoomable="yes" data-img-zoom-url="images/tild3136-3763-4062-b234-383466386266__dsc_9573.jpg" 
+style="background: url('images/tild3136-3763-4062-b234-383466386266__-__resizeb__20x__dsc_9573.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3136-3763-4062-b234-383466386266__dsc_9573.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3232-3661-4366-b133-336462663233__dsc_9580.jpg" 
+bgimgfield="gi_img__29" data-zoom-target="29" data-zoomable="yes" data-img-zoom-url="images/tild3232-3661-4366-b133-336462663233__dsc_9580.jpg" 
+style="background: url('images/tild3232-3661-4366-b133-336462663233__-__resizeb__20x__dsc_9580.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3232-3661-4366-b133-336462663233__dsc_9580.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6233-3234-4337-a538-346233323632__dsc_9587.jpg" 
+bgimgfield="gi_img__30" data-zoom-target="30" data-zoomable="yes" data-img-zoom-url="images/tild6233-3234-4337-a538-346233323632__dsc_9587.jpg" 
+style="background: url('images/tild6233-3234-4337-a538-346233323632__-__resizeb__20x__dsc_9587.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6233-3234-4337-a538-346233323632__dsc_9587.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3761-3839-4664-b134-616330613434__dsc_9609.jpg" 
+bgimgfield="gi_img__31" data-zoom-target="31" data-zoomable="yes" data-img-zoom-url="images/tild3761-3839-4664-b134-616330613434__dsc_9609.jpg" 
+style="background: url('images/tild3761-3839-4664-b134-616330613434__-__resizeb__20x__dsc_9609.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3761-3839-4664-b134-616330613434__dsc_9609.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3563-6430-4265-b936-343464653862__dsc_9612.jpg" 
+bgimgfield="gi_img__32" data-zoom-target="32" data-zoomable="yes" data-img-zoom-url="images/tild3563-6430-4265-b936-343464653862__dsc_9612.jpg" 
+style="background: url('images/tild3563-6430-4265-b936-343464653862__-__resizeb__20x__dsc_9612.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3563-6430-4265-b936-343464653862__dsc_9612.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3131-3932-4937-a562-623532333465__dsc_9616.jpg" 
+bgimgfield="gi_img__33" data-zoom-target="33" data-zoomable="yes" data-img-zoom-url="images/tild3131-3932-4937-a562-623532333465__dsc_9616.jpg" 
+style="background: url('images/tild3131-3932-4937-a562-623532333465__-__resizeb__20x__dsc_9616.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3131-3932-4937-a562-623532333465__dsc_9616.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3231-3034-4033-b834-643138666639__dsc_9619.jpg" 
+bgimgfield="gi_img__34" data-zoom-target="34" data-zoomable="yes" data-img-zoom-url="images/tild3231-3034-4033-b834-643138666639__dsc_9619.jpg" 
+style="background: url('images/tild3231-3034-4033-b834-643138666639__-__resizeb__20x__dsc_9619.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3231-3034-4033-b834-643138666639__dsc_9619.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3539-3430-4338-a364-653033356366__dsc_9621.jpg" 
+bgimgfield="gi_img__35" data-zoom-target="35" data-zoomable="yes" data-img-zoom-url="images/tild3539-3430-4338-a364-653033356366__dsc_9621.jpg" 
+style="background: url('images/tild3539-3430-4338-a364-653033356366__-__resizeb__20x__dsc_9621.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3539-3430-4338-a364-653033356366__dsc_9621.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6131-3330-4031-b563-333261616637__dsc_9635.jpg" 
+bgimgfield="gi_img__36" data-zoom-target="36" data-zoomable="yes" data-img-zoom-url="images/tild6131-3330-4031-b563-333261616637__dsc_9635.jpg" 
+style="background: url('images/tild6131-3330-4031-b563-333261616637__-__resizeb__20x__dsc_9635.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6131-3330-4031-b563-333261616637__dsc_9635.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3963-3838-4033-b630-343134326237__dsc_9644.jpg" 
+bgimgfield="gi_img__37" data-zoom-target="37" data-zoomable="yes" data-img-zoom-url="images/tild3963-3838-4033-b630-343134326237__dsc_9644.jpg" 
+style="background: url('images/tild3963-3838-4033-b630-343134326237__-__resizeb__20x__dsc_9644.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3963-3838-4033-b630-343134326237__dsc_9644.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6234-3861-4334-a439-623436383630__dsc_9646.jpg" 
+bgimgfield="gi_img__38" data-zoom-target="38" data-zoomable="yes" data-img-zoom-url="images/tild6234-3861-4334-a439-623436383630__dsc_9646.jpg" 
+style="background: url('images/tild6234-3861-4334-a439-623436383630__-__resizeb__20x__dsc_9646.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6234-3861-4334-a439-623436383630__dsc_9646.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6437-3031-4966-b363-343733623964__dsc_9652.jpg" 
+bgimgfield="gi_img__39" data-zoom-target="39" data-zoomable="yes" data-img-zoom-url="images/tild6437-3031-4966-b363-343733623964__dsc_9652.jpg" 
+style="background: url('images/tild6437-3031-4966-b363-343733623964__-__resizeb__20x__dsc_9652.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6437-3031-4966-b363-343733623964__dsc_9652.jpg"> </div></div></div></div><style></style></div><div id="rec230858108" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t015__title t-title t-title_lg" field="title" style=""><div style="font-size:42px;font-family:'Roboto';color:#599cff;" data-customstyle="yes">Cми о конкурсе<br /></div></div> </div></div></div></div><div id="rec230907214" class="r t-rec t-rec_pt_30 t-rec_pb_135" style="padding-top:30px;padding-bottom:135px; " data-animationappear="off" data-record-type="897" ><!-- t897 --><!-- @classes t-descr t-descr_xxs t-descr_sm t-title t-title_xxs t-text t-text_md t-heading t-heading_lg t-name t-uptitle t-uptitle_sm t-uptitle_xs t-name_md t-btn t-btn_xs t-btn_sm t-btn_md --><div class="t897"><!-- grid container start --><div class="js-feed t-feed t-feed_col" data-feed-grid-type="col" data-feed-recid="230907214"><div class="t-feed__container t897__container" ><div class="js-feed-parts-select-container t-col t-col_12" ></div></div><!-- preloader els --><div class="js-feed-preloader t-feed__post-preloader_col t-feed__post-preloader__container_hidden t897__container t-feed__container_mobile-grid" ><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div><div class="t-clear t-feed__grid-separator" ></div><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_4"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div></div><!-- preloader els end --><div class="js-feed-container t-feed__container t897__container t-feed__container_mobile-grid" data-feed-show-slice="1"></div></div><!-- grid container end --></div><style type="text/css">/* Feed part switch buttons styles */
+#rec230907214 .t-feed__parts-switch-btn {
+font-weight:400;
+border:1px solid #000000;
+border-radius: 40px; }
+#rec230907214 .t-feed__parts-switch-btn span,
+#rec230907214 .t-feed__parts-switch-btn a {
+color:#000000;
+padding: 6px 18px 6px;
+}
+#rec230907214 .t-feed__parts-switch-btn.t-active {
+background-color: #000000;
+}
+#rec230907214 .t-feed__parts-switch-btn.t-active span,
+#rec230907214 .t-feed__parts-switch-btn.t-active a {
+color:#ffffff !important; }</style><style type="text/css">#rec230907214 .t-feed__post-popup__cover-wrapper .t-slds__bullet_active .t-slds__bullet_body,
+#rec230907214 .t-feed__post-popup__cover-wrapper .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style><!-- news setup start --><script type="text/javascript">t_onReady(function(){
+var typography_optsObj = {
+title: "",
+descr: "",
+subtitle: ""
+};
+var separator_optsObj = {
+height: '',
+color: '',
+opacity: '',
+hideSeparator: false };
+var popup_optsObj = {
+popupBgColor: '#ffffff',
+overlayBgColorRgba: 'rgba(255,255,255,1)',
+closeText: '',
+iconColor: '#000000',
+popupStat: '',
+titleColor: '',
+textColor: '',
+subtitleColor: '',
+datePos: 'aftertext',
+partsPos: 'aftertext',
+imagePos: 'aftertitle',
+inTwoColumns: false,
+zoom: false,
+styleRelevants: '',
+methodRelevants: 'random',
+titleRelevants: '',
+showRelevants: '',
+shareStyle: '',
+shareBg: '',
+isShare: false,
+shareServices: '',
+shareFBToken: '',
+showDate: true,
+bgSize: 'cover'
+};
+var arrowtop_optsObj = {
+isShow: false,
+style: '',
+color: '',
+bottom: '',
+left: '',
+right: ''
+};
+var parts_optsObj = {
+partsBgColor: '',
+partsBorderSize: '1px',
+partsBorderColor: '#000000',
+align: 'center'
+};
+var gallery_optsObj = {
+control: '',
+arrowSize: '',
+arrowBorderSize: '',
+arrowColor: '',
+arrowColorHover: '',
+arrowBg: '',
+arrowBgHover: '',
+arrowBgOpacity: '',
+arrowBgOpacityHover: '',
+showBorder: '',
+dotsWidth: '',
+dotsBg: '',
+dotsActiveBg: '',
+dotsBorderSize: ''
+};
+var btnAllPosts_optsObj = {
+text: '',
+link: '',
+target: ''
+};
+var colWithBg_optsObj = {
+paddingSize: '',
+background: '#ffffff',
+borderRadius: '',
+shadowSize: '',
+shadowOpacity: '',
+shadowSizeHover: '',
+shadowOpacityHover: '',
+shadowShiftyHover: ''
+};
+var options = {
+feeduid: '949022377505',
+previewmode: 'yes',
+align: 'left',
+amountOfPosts: '',
+reverse: 'desc',
+blocksInRow: '3',
+blocksClass: 't-feed__grid-col t-col t-col_4',
+blocksWidth: '360',
+colClass: '12',
+prefixClass: '',
+vindent: '',
+dateFormat: '4',
+timeFormat: '',
+imageRatio: '75',
+hasOriginalAspectRatio: false,
+imageHeight: '',
+imageWidth: '',
+dateFilter: 'all',
+showPartAll: true,
+showImage:true,
+showShortDescr:true,
+showParts:true,
+showDate:true,
+hideFeedParts: false,
+parts_opts: parts_optsObj,
+btnsAlign: false,
+colWithBg: colWithBg_optsObj,
+separator: separator_optsObj,
+btnAllPosts: btnAllPosts_optsObj,
+popup_opts: popup_optsObj,
+arrowtop_opts: arrowtop_optsObj,
+gallery: gallery_optsObj,
+typo: typography_optsObj,
+amountOfSymbols: '',
+bbtnStyle: 'color:#ffffff;background-color:#000000;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;',
+btnStyle: 'color:#000000;border:1px solid #000000;background-color:#ffffff;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;',
+btnTextColor: '#000000',
+btnType: '',
+btnSize: 'sm',
+btnText: '',
+btnReadMore: '',
+isHorizOnMob:false,
+itemsAnim: '',
+datePosPs: 'beforetitle',
+partsPosPs: 'beforetitle',
+imagePosPs: 'beforetitle',
+datePos: 'afterdescr',
+partsPos: 'onimage',
+imagePos: 'beforetitle' };
+t_onFuncLoad('t_feed_init', function() {
+t_feed_init('230907214', options);
+});
+var rec = document.getElementById('rec230907214');
+if (!rec) return;
+var mobileFlexContainer = rec.querySelector('.t897__container_mobile-flex');
+if (!mobileFlexContainer) return;
+mobileFlexContainer.addEventListener('touchstart', function () {
+var columns = rec.querySelectorAll('.t-col');
+Array.prototype.forEach.call(columns, function (column) {
+column.addEventListener('touchmove', function () {
+var tildaMode = document.querySelector('.t-records').getAttribute('data-tilda-mode');
+if (tildaMode) return;
+var tildaLazy = document.querySelector('#allrecords').getAttribute('data-tilda-lazy');
+if (window.lazy === 'y' || tildaLazy === 'yes') {
+t_onFuncLoad('t_lazyload_update', function () {
+t_lazyload_update();
+});
+}
+});
+});
+});
+mobileFlexContainer.addEventListener('mouseup', function () {
+var columns = rec.querySelectorAll('.t-col');
+Array.prototype.forEach.call(columns, function (column) {
+column.addEventListener('touchend', function (event) {
+event.preventDefault();
+});
+});
+});
+});</script><!-- news setup end --></div><div id="rec231492837" class="r t-rec" style=" " data-animationappear="off" data-record-type="217" ><div class="t190" style="position:fixed; z-index:100000; bottom:30px; left:30px; min-height:30px"><a href="javascript:t190_scrollToTop()"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><path style="fill:#599cff;" d="M47.875,24c0,13.186-10.689,23.875-23.875,23.875S0.125,37.186,0.125,24S10.814,0.125,24,0.125
+S47.875,10.814,47.875,24z M25.503,16.881l6.994,7.049c0.583,0.588,1.532,0.592,2.121,0.008c0.588-0.583,0.592-1.533,0.008-2.122
+l-9.562-9.637c-0.281-0.283-0.664-0.443-1.063-0.443c0,0,0,0-0.001,0c-0.399,0-0.782,0.159-1.063,0.442l-9.591,9.637
+c-0.584,0.587-0.583,1.537,0.005,2.121c0.292,0.292,0.675,0.437,1.058,0.437c0.385,0,0.77-0.147,1.063-0.442L22.5,16.87v19.163
+c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5L25.503,16.881z"/></svg></a></div><script>t_onReady(function(){
+var rec = document.querySelector('#rec231492837');
+if(!rec) return;
+var wrapperBlock = rec.querySelector('.t190');
+if(!wrapperBlock) return;
+wrapperBlock.style.display = 'none';
+window.addEventListener('scroll', t_throttle(function(){
+if (window.pageYOffset > window.innerHeight) {
+if(wrapperBlock.style.display === 'none') wrapperBlock.style.display = 'block';
+}else{
+if(wrapperBlock.style.display === 'block') wrapperBlock.style.display = 'none'; 
+};
+})); 
+}); </script></div></div><!--/allrecords-->

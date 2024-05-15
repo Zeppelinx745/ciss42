@@ -1,0 +1,1302 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="289030" data-tilda-page-id="26439599" data-tilda-page-alias="community2020" data-tilda-formskey="b747bf21bed5b885b2de7e95ceb974d4" data-tilda-lazy="yes"><div id="rec426722105" class="r t-rec" style=" " data-animationappear="off" data-record-type="461" ><!-- T461 --><div id="nav426722105marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('426722105');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec426722105 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav426722105" class="t461 t461__positionstatic tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav426722105marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="center" data-menu="yes"><div class="t461__maincontainer "><div class="t461__topwrapper" style="height:140px;"><div class="t461__logowrapper"><div class="t461__logowrapper2"><div style="display: block;"><a href="http://communitykuzbass.ru/" style="color:#ffffff;"><img class="t461__imglogo t461__imglogomobile" 
+src="images/tild6636-3237-4330-b366-306261666435___.png" 
+imgfield="img" 
+style="max-width: 300px; width: 300px;"
+alt="Организатор"
+></a></div></div></div><nav class="t461__listwrapper t461__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t461__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="http://community42.tilda.ws"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Главная</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722106"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Фотогалерея</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722109"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Как это было</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722112"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Отзывы</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#rec427183850"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Видеоотчет</a></li></ul></nav><div class="t461__alladditional"><div class="t461__leftwrapper" style=" padding-right:200px;"><div class="t461__additionalwrapper"><div class="t461__additional_share_buttons t461__transp-black t461__additionalitem"><script t461__type="text/javascript" src="https://static.tildacdn.com/js/ya-share.js" charset="utf-8"></script><div class="ya-share2" data-access-token:facebook="" data-yashareL10n="en" data-services="facebook,vkontakte,odnoklassniki,twitter" data-counter=""></div></div></div></div><div class="t461__rightwrapper" style=" padding-left:200px;"><div class="t461__additionalwrapper"><div class="t461__additional_descr t461__additionalitem" style="font-size:20px;"><em>+7 951 613 36 31</em></div></div></div></div></div><div class="t461__middlelinewrapper"><div class="t461__linewrapper"><hr class="t461__horizontalline" style=" background-color:#000000; opacity:0.1;"></div></div><div class="t461__bottomwrapper t461__menualign_center" style=" height:50px;"><nav class="t461__listwrapper t461__desktoplist"
+aria-label="Основные разделы на странице"><ul class="t461__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="http://community42.tilda.ws" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Главная</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722106" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Фотогалерея</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722109" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Как это было</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec426722112" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Отзывы</a></li><li class="t461__list_item" 
+role="none" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#rec427183850" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#434242;font-size:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Видеоотчет</a></li></ul></nav></div></div></div><style>@media screen and (max-width: 980px) {
+#rec426722105 .t461__leftcontainer{
+padding: 20px;
+}
+}
+@media screen and (max-width: 980px) {
+#rec426722105 .t461__imglogo{
+padding: 20px 0;
+}
+}</style><script>t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t461__desktoplist .t461__list_item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('426722105', '.t461');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('426722105', '.t461');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec426722105');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t461');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('426722105', '.t461');
+});
+});</script><style>@media (hover), (min-width:0\0) {
+#rec426722105 .t-btn:not(.t-animate_no-hover):hover{
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.003) !important; }
+#rec426722105 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec426722105 .t-btntext:not(.t-animate_no-hover):hover{
+}
+}</style><style>#rec426722105 .t-menu__link-item{
+outline: none;
+}
+#rec426722105 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec426722105 .t-menu__link-item,
+#rec426722105 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec426722105 .t461 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec426722106" class="r t-rec t-rec_pt_120 t-rec_pb_0" style="padding-top:120px;padding-bottom:0px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t015__title t-title t-title_lg t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title" style=""><div style="font-size:42px;color:#5f4694;" data-customstyle="yes"><strong>ФОТОГАЛЕРЕЯ</strong></div></div> </div></div></div></div><div id="rec426722107" class="r t-rec" style=" " data-animationappear="off" data-record-type="603" ><!-- t603--><div class="t603"><div class="t603__container t-container_100"><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3832-6538-4265-b033-623530616238__5_____2020_.jpg" 
+bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="images/tild3832-6538-4265-b033-623530616238__5_____2020_.jpg" 
+style="background: url('images/tild3832-6538-4265-b033-623530616238__-__resizeb__20x__5_____2020_.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3832-6538-4265-b033-623530616238__5_____2020_.jpg"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6365-6437-4132-a164-633539656431__photo.png" 
+bgimgfield="gi_img__1" data-zoom-target="1" data-zoomable="yes" data-img-zoom-url="images/tild6365-6437-4132-a164-633539656431__photo.png" 
+style="background: url('images/tild6365-6437-4132-a164-633539656431__-__resizeb__20x__photo.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6365-6437-4132-a164-633539656431__photo.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6466-3634-4433-b365-376435333437__3.png" 
+bgimgfield="gi_img__2" data-zoom-target="2" data-zoomable="yes" data-img-zoom-url="images/tild6466-3634-4433-b365-376435333437__3.png" 
+style="background: url('images/tild6466-3634-4433-b365-376435333437__-__resizeb__20x__3.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6466-3634-4433-b365-376435333437__3.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3162-3563-4637-b665-306630633339___2.png" 
+bgimgfield="gi_img__3" data-zoom-target="3" data-zoomable="yes" data-img-zoom-url="images/tild3162-3563-4637-b665-306630633339___2.png" 
+style="background: url('images/tild3162-3563-4637-b665-306630633339__-__resizeb__20x___2.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3162-3563-4637-b665-306630633339___2.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3563-3762-4766-b431-313934616336__2.png" 
+bgimgfield="gi_img__4" data-zoom-target="4" data-zoomable="yes" data-img-zoom-url="images/tild3563-3762-4766-b431-313934616336__2.png" 
+style="background: url('images/tild3563-3762-4766-b431-313934616336__-__resizeb__20x__2.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3563-3762-4766-b431-313934616336__2.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3865-6166-4434-a564-306564366133__2.png" 
+bgimgfield="gi_img__5" data-zoom-target="5" data-zoomable="yes" data-img-zoom-url="images/tild3865-6166-4434-a564-306564366133__2.png" 
+style="background: url('images/tild3865-6166-4434-a564-306564366133__-__resizeb__20x__2.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3865-6166-4434-a564-306564366133__2.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild3436-6665-4230-b937-323431363437__3.png" 
+bgimgfield="gi_img__6" data-zoom-target="6" data-zoomable="yes" data-img-zoom-url="images/tild3436-6665-4230-b937-323431363437__3.png" 
+style="background: url('images/tild3436-6665-4230-b937-323431363437__-__resizeb__20x__3.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3436-6665-4230-b937-323431363437__3.png"> </div></div><div class="t603__tile t603__tile_25" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg" data-original="images/tild6530-6332-4333-a664-316564316462__2.png" 
+bgimgfield="gi_img__7" data-zoom-target="7" data-zoomable="yes" data-img-zoom-url="images/tild6530-6332-4333-a664-316564316462__2.png" 
+style="background: url('images/tild6530-6332-4333-a664-316564316462__-__resizeb__20x__2.png') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6530-6332-4333-a664-316564316462__2.png"> </div></div></div></div><style></style></div><div id="rec426722108" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-record-type="191" ><!-- T142 --><div class="t142"><div class="t-container_100"><div class="t142__wrapone"><div class="t142__wraptwo"><a href="http://community42.tilda.ws/photo2020" target="" class=""><div class="t-btn t142__submit t-btn_md" style="color:#8468aa;border:3px solid #8468aa;" ><span class="t142__text">Больше фотографий</span></div></a></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('426722108');});
+});
+window.addEventListener('load', function(){
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('426722108');});
+});</script></div><div id="rec427183850" class="r t-rec t-rec_pt_45 t-rec_pb_0" style="padding-top:45px;padding-bottom:0px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t015__title t-title t-title_lg t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title" style=""><div style="font-size:42px;color:#5f4694;" data-customstyle="yes"><strong>ВИДЕООТЧЁТ</strong></div></div> </div></div></div></div><div id="rec427183445" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-record-type="4" ><!-- T121 --><div class="t121"><center><div class="t-video-lazyload t-width t-width_10" style="height:540px; " data-videolazy-type="youtube" data-videolazy-id="WhLwkXcruoU" data-blocklazy-id="427183445" data-videolazy-load="false" data-videolazy-height="540px"></div></center></div><script>t_onReady(function () {
+var rec = document.getElementById('rec427183445');
+if (!rec) return;
+t_onFuncLoad('t121_setHeight', function () {
+t121_setHeight('427183445');
+window.addEventListener('scroll', t_throttle(function() {
+t121_setHeight('427183445');
+}));
+});
+window.onload = function () {
+t_onFuncLoad('t121_setHeight', function () {
+t121_setHeight('427183445');
+});
+};
+window.addEventListener('resize', function () {
+var tableView = document.getElementById('allrecordstable');
+if (tableView) {
+var videoLazyLoad = rec.querySelector('.t-video-lazyload');
+if (!videoLazyLoad) return;
+videoLazyLoad.style.height = '540px';
+var videoLazyLoadIframe = videoLazyLoad.querySelector('iframe');
+if (!videoLazyLoadIframe) return;
+videoLazyLoadIframe.height = '540';
+} else {
+t_onFuncLoad('t121_setHeight', function () {
+t121_setHeight('427183445');
+});
+}
+});
+var wrapperBlock = rec.querySelector('.t121');
+if (wrapperBlock) {
+t_onFuncLoad('t121_setHeight', function () {
+wrapperBlock.addEventListener('displayChanged', function () {
+t121_setHeight('427183445');
+});
+});
+}
+});</script></div><div id="rec426722109" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t015__title t-title t-title_lg t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title" style=""><div style="font-size:42px;color:#5f4694;" data-customstyle="yes"><strong>КАК ЭТО БЫЛО</strong></div></div> </div></div></div></div><div id="rec426722110" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px; " data-animationappear="off" data-record-type="897" ><!-- t897 --><!-- @classes t-descr t-descr_xxs t-descr_sm t-title t-title_xxs t-text t-text_md t-heading t-heading_lg t-name t-uptitle t-uptitle_sm t-uptitle_xs t-name_xl t-btn t-btn_xs t-btn_sm t-btn_md --><div class="t897"><!-- grid container start --><div class="js-feed t-feed t-feed_col" data-feed-grid-type="col" data-feed-recid="426722110"><div class="t-feed__container t897__container" ><div class="js-feed-parts-select-container t-col t-col_12" ></div></div><!-- preloader els --><div class="js-feed-preloader t-feed__post-preloader_col t-feed__post-preloader__container_hidden t897__container" ><div class="t-feed__post-preloader t-feed__grid-col t-col t-col_8 t-prefix_2"><div class="t-feed__post-preloader__img"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div><div class="t-feed__post-preloader__text"></div></div></div><!-- preloader els end --><div class="js-feed-container t-feed__container t897__container" data-feed-show-slice="1"></div></div><!-- grid container end --></div><style type="text/css">/* Feed part switch buttons styles */
+#rec426722110 .t-feed__parts-switch-btn {
+font-weight:400;
+border:1px solid #000000;
+border-radius: 40px; }
+#rec426722110 .t-feed__parts-switch-btn span,
+#rec426722110 .t-feed__parts-switch-btn a {
+color:#000000;
+padding: 6px 18px 6px;
+}
+#rec426722110 .t-feed__parts-switch-btn.t-active {
+background-color: #000000;
+}
+#rec426722110 .t-feed__parts-switch-btn.t-active span,
+#rec426722110 .t-feed__parts-switch-btn.t-active a {
+color:#ffffff !important; }</style><style type="text/css">#rec426722110 .t-feed__post-popup__cover-wrapper .t-slds__bullet_active .t-slds__bullet_body,
+#rec426722110 .t-feed__post-popup__cover-wrapper .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style><!-- news setup start --><script type="text/javascript">t_onReady(function(){
+var typography_optsObj = {
+title: "",
+descr: "",
+subtitle: ""
+};
+var separator_optsObj = {
+height: '',
+color: '',
+opacity: '',
+hideSeparator: false };
+var popup_optsObj = {
+popupBgColor: '#ffffff',
+overlayBgColorRgba: 'rgba(255,255,255,1)',
+closeText: '',
+iconColor: '#000000',
+popupStat: '',
+titleColor: '',
+textColor: '',
+subtitleColor: '',
+datePos: 'aftertext',
+partsPos: 'aftertext',
+imagePos: 'aftertitle',
+inTwoColumns: false,
+zoom: false,
+styleRelevants: '',
+methodRelevants: 'random',
+titleRelevants: '',
+showRelevants: '',
+shareStyle: '',
+shareBg: '',
+isShare: false,
+shareServices: '',
+shareFBToken: '',
+showDate: true,
+bgSize: 'cover'
+};
+var arrowtop_optsObj = {
+isShow: false,
+style: '',
+color: '',
+bottom: '',
+left: '',
+right: ''
+};
+var parts_optsObj = {
+partsBgColor: '',
+partsBorderSize: '1px',
+partsBorderColor: '#000000',
+align: 'center'
+};
+var gallery_optsObj = {
+control: '',
+arrowSize: '',
+arrowBorderSize: '',
+arrowColor: '',
+arrowColorHover: '',
+arrowBg: '',
+arrowBgHover: '',
+arrowBgOpacity: '',
+arrowBgOpacityHover: '',
+showBorder: '',
+dotsWidth: '',
+dotsBg: '',
+dotsActiveBg: '',
+dotsBorderSize: ''
+};
+var btnAllPosts_optsObj = {
+text: '',
+link: '',
+target: ''
+};
+var colWithBg_optsObj = {
+paddingSize: '',
+background: '#ffffff',
+borderRadius: '',
+shadowSize: '',
+shadowOpacity: '',
+shadowSizeHover: '',
+shadowOpacityHover: '',
+shadowShiftyHover: ''
+};
+var options = {
+feeduid: '382501116121',
+previewmode: 'yes',
+align: 'left',
+amountOfPosts: '',
+reverse: 'desc',
+blocksInRow: '1',
+blocksClass: 't-feed__grid-col t-col t-col_8 t-prefix_2',
+blocksWidth: '760',
+colClass: '12',
+prefixClass: '',
+vindent: '',
+dateFormat: '4',
+timeFormat: '',
+imageRatio: '75',
+hasOriginalAspectRatio: false,
+imageHeight: '',
+imageWidth: '',
+dateFilter: 'all',
+showPartAll: true,
+showImage:true,
+showShortDescr:true,
+showParts:true,
+showDate:true,
+hideFeedParts: false,
+parts_opts: parts_optsObj,
+btnsAlign: false,
+colWithBg: colWithBg_optsObj,
+separator: separator_optsObj,
+btnAllPosts: btnAllPosts_optsObj,
+popup_opts: popup_optsObj,
+arrowtop_opts: arrowtop_optsObj,
+gallery: gallery_optsObj,
+typo: typography_optsObj,
+amountOfSymbols: '',
+bbtnStyle: 'color:#ffffff;background-color:#000000;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;',
+btnStyle: 'color:#000000;border:1px solid #000000;background-color:#ffffff;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;',
+btnTextColor: '#000000',
+btnType: '',
+btnSize: 'sm',
+btnText: '',
+btnReadMore: '',
+isHorizOnMob:false,
+itemsAnim: '',
+datePosPs: 'beforetitle',
+partsPosPs: 'beforetitle',
+imagePosPs: 'beforetitle',
+datePos: 'afterdescr',
+partsPos: 'onimage',
+imagePos: 'beforetitle' };
+t_onFuncLoad('t_feed_init', function() {
+t_feed_init('426722110', options);
+});
+var rec = document.getElementById('rec426722110');
+if (!rec) return;
+var mobileFlexContainer = rec.querySelector('.t897__container_mobile-flex');
+if (!mobileFlexContainer) return;
+mobileFlexContainer.addEventListener('touchstart', function () {
+var columns = rec.querySelectorAll('.t-col');
+Array.prototype.forEach.call(columns, function (column) {
+column.addEventListener('touchmove', function () {
+var tildaMode = document.querySelector('.t-records').getAttribute('data-tilda-mode');
+if (tildaMode) return;
+var tildaLazy = document.querySelector('#allrecords').getAttribute('data-tilda-lazy');
+if (window.lazy === 'y' || tildaLazy === 'yes') {
+t_onFuncLoad('t_lazyload_update', function () {
+t_lazyload_update();
+});
+}
+});
+});
+});
+mobileFlexContainer.addEventListener('mouseup', function () {
+var columns = rec.querySelectorAll('.t-col');
+Array.prototype.forEach.call(columns, function (column) {
+column.addEventListener('touchend', function (event) {
+event.preventDefault();
+});
+});
+});
+});</script><!-- news setup end --></div><div id="rec426722111" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="30" ><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t015__title t-title t-title_lg t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title" style=""><div style="font-size:42px;color:#5f4694;" data-customstyle="yes">ОТЗЫВЫ</div></div> </div></div></div></div><div id="rec426722112" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-animationappear="off" data-record-type="604" ><!-- t604 --><div class="t604"><div class="t-slds" style="visibility: hidden;"><div class="t-container t-slds__main"><ul class="t-slds__arrow_container t-slds__arrow-nearpic"><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
+aria-controls="carousel_426722112" 
+aria-disabled="false" 
+aria-label="Предыдущий слайд"
+style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#000000"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
+aria-controls="carousel_426722112" 
+aria-disabled="false" 
+aria-label="Следующий слайд"
+style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#000000"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li> </ul><div class="t-slds__container t-width t-width_10 t-margin_auto"><ul class="t-slds__items-wrapper t-slds_animated-fast t-slds__witharrows" 
+id="carousel_426722112" data-slider-transition="300" data-slider-with-cycle="true" data-slider-correct-height="false" data-auto-correct-mobile-width="false" data-slider-arrows-nearpic="yes" 
+aria-live="off"><li class="t-slds__item t-slds__item_active" data-slide-index="1" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="1 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3237-6235-4337-b263-323130306661__125930288_8683642939.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__0"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3237-6235-4337-b263-323130306661__125930288_8683642939.jpg"
+style="background-image: url('images/tild3237-6235-4337-b263-323130306661__-__resizeb__20x__125930288_8683642939.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="2" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="2 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3562-6636-4234-b530-373236313062__126074254_2878525692.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__1"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3562-6636-4234-b530-373236313062__126074254_2878525692.jpg"
+style="background-image: url('images/tild3562-6636-4234-b530-373236313062__-__resizeb__20x__126074254_2878525692.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="3" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="3 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6433-6264-4763-b731-323636306630__126904450_1581829658.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__2"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6433-6264-4763-b731-323636306630__126904450_1581829658.jpg"
+style="background-image: url('images/tild6433-6264-4763-b731-323636306630__-__resizeb__20x__126904450_1581829658.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="4" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="4 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6664-3766-4234-b863-323332373463__127052797_4044500840.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__3"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6664-3766-4234-b863-323332373463__127052797_4044500840.jpg"
+style="background-image: url('images/tild6664-3766-4234-b863-323332373463__-__resizeb__20x__127052797_4044500840.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="5" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="5 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6535-3166-4265-b566-666135613932__127060574_1986897950.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__4"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6535-3166-4265-b566-666135613932__127060574_1986897950.jpg"
+style="background-image: url('images/tild6535-3166-4265-b566-666135613932__-__resizeb__20x__127060574_1986897950.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="6" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="6 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3136-6132-4761-a130-363766616134__127079339_1778891806.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__5"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3136-6132-4761-a130-363766616134__127079339_1778891806.jpg"
+style="background-image: url('images/tild3136-6132-4761-a130-363766616134__-__resizeb__20x__127079339_1778891806.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="7" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="7 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3265-3330-4334-b134-323536633431__127082235_3732699137.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__6"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3265-3330-4334-b134-323536633431__127082235_3732699137.jpg"
+style="background-image: url('images/tild3265-3330-4334-b134-323536633431__-__resizeb__20x__127082235_3732699137.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="8" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="8 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3763-3561-4732-b064-666534316236__127083809_4210983689.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__7"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3763-3561-4732-b064-666534316236__127083809_4210983689.jpg"
+style="background-image: url('images/tild3763-3561-4732-b064-666534316236__-__resizeb__20x__127083809_4210983689.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="9" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="9 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6366-6466-4433-b939-633831623565__127089636_4917903217.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__8"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6366-6466-4433-b939-633831623565__127089636_4917903217.jpg"
+style="background-image: url('images/tild6366-6466-4433-b939-633831623565__-__resizeb__20x__127089636_4917903217.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="10" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="10 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6463-6162-4263-a131-303465623439__127092794_3657381180.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__9"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6463-6162-4263-a131-303465623439__127092794_3657381180.jpg"
+style="background-image: url('images/tild6463-6162-4263-a131-303465623439__-__resizeb__20x__127092794_3657381180.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="11" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="11 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6432-3339-4430-a130-383339316537__127092796_8370957235.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__10"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6432-3339-4430-a130-383339316537__127092796_8370957235.jpg"
+style="background-image: url('images/tild6432-3339-4430-a130-383339316537__-__resizeb__20x__127092796_8370957235.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="12" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="12 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3864-3937-4132-b039-663266663462__127096697_4177059562.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__11"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3864-3937-4132-b039-663266663462__127096697_4177059562.jpg"
+style="background-image: url('images/tild3864-3937-4132-b039-663266663462__-__resizeb__20x__127096697_4177059562.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="13" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="13 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3432-3638-4037-a232-393635376564__127162656_3658302011.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__12"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3432-3638-4037-a232-393635376564__127162656_3658302011.jpg"
+style="background-image: url('images/tild3432-3638-4037-a232-393635376564__-__resizeb__20x__127162656_3658302011.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="14" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="14 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3036-3837-4230-b735-643331323034__127166061_8428565232.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__13"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3036-3837-4230-b735-643331323034__127166061_8428565232.jpg"
+style="background-image: url('images/tild3036-3837-4230-b735-643331323034__-__resizeb__20x__127166061_8428565232.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="15" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="15 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3633-6365-4664-b733-623064653334__127167926_3886042759.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__14"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3633-6365-4664-b733-623064653334__127167926_3886042759.jpg"
+style="background-image: url('images/tild3633-6365-4664-b733-623064653334__-__resizeb__20x__127167926_3886042759.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="16" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="16 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6430-3632-4839-b134-356239333530__127169807_9939022244.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__15"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6430-3632-4839-b134-356239333530__127169807_9939022244.jpg"
+style="background-image: url('images/tild6430-3632-4839-b134-356239333530__-__resizeb__20x__127169807_9939022244.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="17" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="17 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3139-3765-4364-a434-306264313133__127173990_3843095252.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__16"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3139-3765-4364-a434-306264313133__127173990_3843095252.jpg"
+style="background-image: url('images/tild3139-3765-4364-a434-306264313133__-__resizeb__20x__127173990_3843095252.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="18" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="18 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3163-3366-4831-a266-626663313465__127211307_7596795115.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__17"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3163-3366-4831-a266-626663313465__127211307_7596795115.jpg"
+style="background-image: url('images/tild3163-3366-4831-a266-626663313465__-__resizeb__20x__127211307_7596795115.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="19" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="19 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3737-6262-4138-b335-303931356335__127216879_7363889572.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__18"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3737-6262-4138-b335-303931356335__127216879_7363889572.jpg"
+style="background-image: url('images/tild3737-6262-4138-b335-303931356335__-__resizeb__20x__127216879_7363889572.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="20" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="20 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3731-6437-4765-b262-666634393965__127247291_1529597827.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__19"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3731-6437-4765-b262-666634393965__127247291_1529597827.jpg"
+style="background-image: url('images/tild3731-6437-4765-b262-666634393965__-__resizeb__20x__127247291_1529597827.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="21" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="21 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6462-3438-4439-a639-393539333166__127247423_4171002227.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__20"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6462-3438-4439-a639-393539333166__127247423_4171002227.jpg"
+style="background-image: url('images/tild6462-3438-4439-a639-393539333166__-__resizeb__20x__127247423_4171002227.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="22" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="22 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6461-3030-4531-b538-633335636538__127250817_8271736280.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__21"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6461-3030-4531-b538-633335636538__127250817_8271736280.jpg"
+style="background-image: url('images/tild6461-3030-4531-b538-633335636538__-__resizeb__20x__127250817_8271736280.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="23" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="23 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3861-3438-4137-b337-646239643538__127250887_3700545875.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__22"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3861-3438-4137-b337-646239643538__127250887_3700545875.jpg"
+style="background-image: url('images/tild3861-3438-4137-b337-646239643538__-__resizeb__20x__127250887_3700545875.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="24" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="24 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3732-3234-4163-a563-343231623237__127253786_2210877893.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__23"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3732-3234-4163-a563-343231623237__127253786_2210877893.jpg"
+style="background-image: url('images/tild3732-3234-4163-a563-343231623237__-__resizeb__20x__127253786_2210877893.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="25" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="25 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3433-6132-4662-b833-656363646436__127256706_6802391193.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__24"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3433-6132-4662-b833-656363646436__127256706_6802391193.jpg"
+style="background-image: url('images/tild3433-6132-4662-b833-656363646436__-__resizeb__20x__127256706_6802391193.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="26" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="26 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3235-6463-4435-a430-333662353166__127278317_6522178087.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__25"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3235-6463-4435-a430-333662353166__127278317_6522178087.jpg"
+style="background-image: url('images/tild3235-6463-4435-a430-333662353166__-__resizeb__20x__127278317_6522178087.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="27" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="27 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6436-3037-4166-a633-623166613336__127281980_1449536408.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__26"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6436-3037-4166-a633-623166613336__127281980_1449536408.jpg"
+style="background-image: url('images/tild6436-3037-4166-a633-623166613336__-__resizeb__20x__127281980_1449536408.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="28" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="28 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3664-3832-4533-a330-623936353865__127287231_1013526117.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__27"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3664-3832-4533-a330-623936353865__127287231_1013526117.jpg"
+style="background-image: url('images/tild3664-3832-4533-a330-623936353865__-__resizeb__20x__127287231_1013526117.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="29" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="29 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3535-6464-4533-b730-616438646463__127287232_4044954040.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__28"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3535-6464-4533-b730-616438646463__127287232_4044954040.jpg"
+style="background-image: url('images/tild3535-6464-4533-b730-616438646463__-__resizeb__20x__127287232_4044954040.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="30" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="30 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6331-3936-4363-b362-333234373962__127288996_3036520296.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__29"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6331-3936-4363-b362-333234373962__127288996_3036520296.jpg"
+style="background-image: url('images/tild6331-3936-4363-b362-333234373962__-__resizeb__20x__127288996_3036520296.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="31" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="31 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6161-6466-4766-b139-303862623061__127289000_8748891532.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__30"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6161-6466-4766-b139-303862623061__127289000_8748891532.jpg"
+style="background-image: url('images/tild6161-6466-4766-b139-303862623061__-__resizeb__20x__127289000_8748891532.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="32" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="32 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6463-3664-4131-b365-613336323233__127287231_1013526117.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__31"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6463-3664-4131-b365-613336323233__127287231_1013526117.jpg"
+style="background-image: url('images/tild6463-3664-4131-b365-613336323233__-__resizeb__20x__127287231_1013526117.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="33" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="33 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3061-3439-4039-b662-623434326463__127287232_4044954040.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__32"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3061-3439-4039-b662-623434326463__127287232_4044954040.jpg"
+style="background-image: url('images/tild3061-3439-4039-b662-623434326463__-__resizeb__20x__127287232_4044954040.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="34" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="34 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6337-3231-4331-a233-383137373934__127288996_3036520296.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__33"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6337-3231-4331-a233-383137373934__127288996_3036520296.jpg"
+style="background-image: url('images/tild6337-3231-4331-a233-383137373934__-__resizeb__20x__127288996_3036520296.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="35" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="35 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3030-3336-4166-a464-366337623133__127289000_8748891532.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__34"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3030-3336-4166-a464-366337623133__127289000_8748891532.jpg"
+style="background-image: url('images/tild3030-3336-4166-a464-366337623133__-__resizeb__20x__127289000_8748891532.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="36" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="36 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6563-3031-4062-b766-653663393339__127305316_2875634626.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__35"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6563-3031-4062-b766-653663393339__127305316_2875634626.jpg"
+style="background-image: url('images/tild6563-3031-4062-b766-653663393339__-__resizeb__20x__127305316_2875634626.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="37" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="37 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6436-6162-4431-a638-356536636164__127319754_1993976050.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__36"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6436-6162-4431-a638-356536636164__127319754_1993976050.jpg"
+style="background-image: url('images/tild6436-6162-4431-a638-356536636164__-__resizeb__20x__127319754_1993976050.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="38" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="38 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6164-3833-4134-a230-616333623337__127323121_1087400228.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__37"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6164-3833-4134-a230-616333623337__127323121_1087400228.jpg"
+style="background-image: url('images/tild6164-3833-4134-a230-616333623337__-__resizeb__20x__127323121_1087400228.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="39" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="39 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3734-3463-4330-b831-323934623364__127327690_6612490645.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__38"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3734-3463-4330-b831-323934623364__127327690_6612490645.jpg"
+style="background-image: url('images/tild3734-3463-4330-b831-323934623364__-__resizeb__20x__127327690_6612490645.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="40" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="40 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3236-3162-4166-b533-613137663361__127333175_1619483489.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__39"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3236-3162-4166-b533-613137663361__127333175_1619483489.jpg"
+style="background-image: url('images/tild3236-3162-4166-b533-613137663361__-__resizeb__20x__127333175_1619483489.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="41" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="41 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3636-3539-4134-b438-303065386539__127389213_1936335209.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__40"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3636-3539-4134-b438-303065386539__127389213_1936335209.jpg"
+style="background-image: url('images/tild3636-3539-4134-b438-303065386539__-__resizeb__20x__127389213_1936335209.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="42" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="42 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6333-3637-4238-b438-386462373039__127403806_1255676060.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__41"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6333-3637-4238-b438-386462373039__127403806_1255676060.jpg"
+style="background-image: url('images/tild6333-3637-4238-b438-386462373039__-__resizeb__20x__127403806_1255676060.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="43" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="43 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3637-6632-4430-b932-663439653663__127421701_1776771274.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__42"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3637-6632-4430-b932-663439653663__127421701_1776771274.jpg"
+style="background-image: url('images/tild3637-6632-4430-b932-663439653663__-__resizeb__20x__127421701_1776771274.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="44" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="44 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6336-6139-4465-a633-356563616261__127428748_5126236796.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__43"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6336-6139-4465-a633-356563616261__127428748_5126236796.jpg"
+style="background-image: url('images/tild6336-6139-4465-a633-356563616261__-__resizeb__20x__127428748_5126236796.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="45" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="45 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6334-6561-4431-b039-653234643531__127432873_3632902949.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__44"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6334-6561-4431-b039-653234643531__127432873_3632902949.jpg"
+style="background-image: url('images/tild6334-6561-4431-b039-653234643531__-__resizeb__20x__127432873_3632902949.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="46" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="46 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3063-3665-4064-a633-626465303964__127448472_6682988340.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__45"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3063-3665-4064-a633-626465303964__127448472_6682988340.jpg"
+style="background-image: url('images/tild3063-3665-4064-a633-626465303964__-__resizeb__20x__127448472_6682988340.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="47" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="47 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6339-3361-4363-b131-363936326636__127451704_3826751496.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__46"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6339-3361-4363-b131-363936326636__127451704_3826751496.jpg"
+style="background-image: url('images/tild6339-3361-4363-b131-363936326636__-__resizeb__20x__127451704_3826751496.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="48" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="48 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3238-3830-4130-a435-323262313737__127477880_7432632596.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__47"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3238-3830-4130-a435-323262313737__127477880_7432632596.jpg"
+style="background-image: url('images/tild3238-3830-4130-a435-323262313737__-__resizeb__20x__127477880_7432632596.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="49" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="49 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3961-3932-4234-b732-323863653933__127608866_3963640748.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__48"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3961-3932-4234-b732-323863653933__127608866_3963640748.jpg"
+style="background-image: url('images/tild3961-3932-4234-b732-323863653933__-__resizeb__20x__127608866_3963640748.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="50" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="50 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6234-3261-4438-b361-623538653439__127614471_1262047997.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__49"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6234-3261-4438-b361-623538653439__127614471_1262047997.jpg"
+style="background-image: url('images/tild6234-3261-4438-b361-623538653439__-__resizeb__20x__127614471_1262047997.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="51" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="51 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6362-3236-4366-b232-616437353539__127636661_8236531717.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__50"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6362-3236-4366-b232-616437353539__127636661_8236531717.jpg"
+style="background-image: url('images/tild6362-3236-4366-b232-616437353539__-__resizeb__20x__127636661_8236531717.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="52" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="52 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6533-3238-4930-b964-303438333665__127656995_3541268462.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__51"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6533-3238-4930-b964-303438333665__127656995_3541268462.jpg"
+style="background-image: url('images/tild6533-3238-4930-b964-303438333665__-__resizeb__20x__127656995_3541268462.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="53" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="53 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3334-6235-4339-b538-366662386435__127699802_3796288897.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__52"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3334-6235-4339-b538-366662386435__127699802_3796288897.jpg"
+style="background-image: url('images/tild3334-6235-4339-b538-366662386435__-__resizeb__20x__127699802_3796288897.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="54" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="54 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3566-3663-4233-a237-336131373838__127764242_3741642505.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__53"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3566-3663-4233-a237-336131373838__127764242_3741642505.jpg"
+style="background-image: url('images/tild3566-3663-4233-a237-336131373838__-__resizeb__20x__127764242_3741642505.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="55" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="55 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3764-6435-4963-b633-393965666264__127778864_7295996945.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__54"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3764-6435-4963-b633-393965666264__127778864_7295996945.jpg"
+style="background-image: url('images/tild3764-6435-4963-b633-393965666264__-__resizeb__20x__127778864_7295996945.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="56" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="56 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild6338-3730-4563-b535-353533376435__127796294_2094381673.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__55"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild6338-3730-4563-b535-353533376435__127796294_2094381673.jpg"
+style="background-image: url('images/tild6338-3730-4563-b535-353533376435__-__resizeb__20x__127796294_2094381673.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="57" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="57 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3263-3638-4231-a661-323838346434__127918343_6952811644.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__56"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3263-3638-4231-a661-323838346434__127918343_6952811644.jpg"
+style="background-image: url('images/tild3263-3638-4231-a661-323838346434__-__resizeb__20x__127918343_6952811644.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="58" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="58 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3638-3137-4263-a366-623765613133__127920631_3981226446.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__57"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3638-3137-4263-a366-623765613133__127920631_3981226446.jpg"
+style="background-image: url('images/tild3638-3137-4263-a366-623765613133__-__resizeb__20x__127920631_3981226446.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="59" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="59 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3963-3439-4364-b831-323033373735__127931280_3625300983.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__58"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3963-3439-4364-b831-323033373735__127931280_3625300983.jpg"
+style="background-image: url('images/tild3963-3439-4364-b831-323033373735__-__resizeb__20x__127931280_3625300983.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="60" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="60 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3066-3134-4161-b432-646232653436__127956664_1739458306.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__59"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3066-3134-4161-b432-646232653436__127956664_1739458306.jpg"
+style="background-image: url('images/tild3066-3134-4161-b432-646232653436__-__resizeb__20x__127956664_1739458306.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li><li class="t-slds__item" data-slide-index="61" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="61 из 61"><div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3031-6434-4162-b530-646464366233__127959932_3691406241.jpg"><div class="t604__imgwrapper" bgimgfield="gi_img__60"><div class="t-slds__bgimg t-slds__bgimg-contain t-bgimg" data-original="images/tild3031-6434-4162-b530-646464366233__127959932_3691406241.jpg"
+style="background-image: url('images/tild3031-6434-4162-b530-646464366233__-__resizeb__20x__127959932_3691406241.jpg');"
+></div><div class="t604__separator" data-slider-image-width="860" data-slider-image-height="550"></div></div></div></div></li></ul></div><ul class="t-slds__bullet_wrapper"><li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 1" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="2"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 2" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="3"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 3" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="4"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 4" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="5"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 5" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="6"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 6" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="7"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 7" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="8"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 8" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="9"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 9" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="10"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 10" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="11"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 11" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="12"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 12" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="13"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 13" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="14"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 14" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="15"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 15" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="16"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 16" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="17"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 17" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="18"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 18" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="19"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 19" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="20"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 20" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="21"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 21" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="22"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 22" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="23"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 23" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="24"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 24" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="25"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 25" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="26"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 26" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="27"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 27" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="28"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 28" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="29"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 29" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="30"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 30" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="31"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 31" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="32"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 32" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="33"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 33" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="34"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 34" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="35"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 35" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="36"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 36" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="37"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 37" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="38"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 38" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="39"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 39" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="40"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 40" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="41"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 41" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="42"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 42" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="43"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 43" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="44"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 44" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="45"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 45" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="46"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 46" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="47"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 47" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="48"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 48" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="49"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 49" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="50"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 50" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="51"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 51" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="52"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 52" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="53"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 53" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="54"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 54" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="55"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 55" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="56"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 56" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="57"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 57" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="58"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 58" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="59"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 59" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="60"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 60" 
+style="background-color: #c7c7c7;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="61"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 61" 
+style="background-color: #c7c7c7;"></button></li></ul><div class="t-slds__caption__container"></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t_sldsInit', function() {
+t_sldsInit('426722112');
+});
+t_onFuncLoad('t604_init', function () {
+t604_init('426722112');
+});
+});</script><style>#rec426722112 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #222 !important;
+}
+#rec426722112 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style></div><div id="rec426722113" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px;background-color:#3b3b3b; " data-record-type="61" data-bg-color="#3b3b3b"><!-- T051 --><div class="t051"><div class="t-container"><div class="t-col t-col_12 "><div class="t051__text t-text t-text_md" style="color:#ffffff;" field="text"><div style="text-align:left;" data-customstyle="yes">Автор программы - Энгель Светлана Леонидовна<br />Правообладатель - <a href="https://fondp42.ru/" style="">Муниципальный некоммерческий Фонд поддержки малого предпринимательства г. Кемерово</a><br /><br /><span style="font-size: 14px;">КОМЬЮНИТИ СОЦИАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ КУЗБАССА © 2016-2020</span><br /><span style="font-size: 14px;">Любое использование либо копирование материалов или подборки материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: </span><strong><a href="http://accelerator-ciss42.ru/" style="noopener noreferrer"><span style="font-size: 14px;">http://communitykuzbass.ru</span></a></strong><br /></div></div></div></div></div></div></div><!--/allrecords-->
